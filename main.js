@@ -7,4 +7,7 @@ function b() {
 function x() {
 }
 
+function y() {
+}
+
 
