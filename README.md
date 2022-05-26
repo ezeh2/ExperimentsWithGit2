@@ -100,3 +100,17 @@ da6a07ddab846dd038db0ee9972fe22802572884 (main) Initial commit
 * da6a07ddab846dd038db0ee9972fe22802572884 (origin/main, origin/HEAD, main) Initial commit
 </pre>
 </p></details>
+
+### Git All branches
+
+<details><summary>git branch -v</summary>
+<p>
+<pre>
+* exp1/features/xy                   ab748d5 added function y
+  exp1/features/xy_merge_main        58bb746 merged function c and d from exp1/main
+  exp1/features/xy_merge_squash_main 16dc81d squash merged function c and d from exp1/main
+  exp1/features/xy_rebased_main      b3e8622 added function y
+  exp1/main                          8d7218f function d
+  main                               da6a07d [behind 4] Initial commit
+</pre>
+</p></details>
