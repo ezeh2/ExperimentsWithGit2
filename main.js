@@ -12,4 +12,7 @@ function d() {
 function x() {
 }
 
+function y() {
+}
+
 
