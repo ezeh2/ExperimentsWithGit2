@@ -8,6 +8,8 @@ function c() {
 }
 
 function d() {
+
+function x() {
 }
 
 
