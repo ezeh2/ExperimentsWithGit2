@@ -1,3 +1,28 @@
+### What was done
+
+1. Branch **exp1/main** is created.
+2. File *main.js* is added with function *a* and commited.
+3. Function *b* is added to *main.js* and commited.
+4. Branch **exp1/features/xy** is created, but not used at the moment.
+5. Still on branch **exp1/main** function *c* is added to *main.js* and commited.
+6. Still on branch **exp1/main** function *d* is added to *main.js* and commited.
+
+On branch **exp1/features/xy**
+1. Function *x* is added to *main.js* and commited.
+2. Function *y* is added to *main.js* and commited.
+3. These Branches are created:
+```
+git checkout -b exp1/features/**xy_merge_main**
+git checkout -b * exp1/features/**xy_merge_squash_main**
+git checkout -b * exp1/features/**xy_rebased_main** 
+```
+
+4. On branch exp1/features/**xy_merge_main**: `git merge exp1/main`
+5. On branch exp1/features/**xy_merge_squash_main**: `git merge exp1/main --squash`
+6. On branch exp1/features/**xy_rebased_main**: `git rebase exp1/main`
+
+
+### Git Logs of all branches
 
 <details><summary>git log exp1/main --graph</summary>
 <p>
@@ -48,6 +73,18 @@
 * 00ccb217782bd8f08f33f83f2da1c12a5bbaf855 added function b
 * 41abdf604b7d354d63b80f12ebed67586251f116 added function a
 * da6a07ddab846dd038db0ee9972fe22802572884 (origin/main, origin/HEAD, main) Initial commit
+</pre>
+</p></details>
+
+<details><summary>git log exp1/features/xy_merge_squash_main</summary>
+<p>
+<pre>
+16dc81dbdf3be7983c7c563c710175a89f13ff3e (origin/exp1/features/xy_merge_squash_main, exp1/features/xy_merge_squash_main) squash merged function c and d from exp1/main
+ab748d502e13571fb38d8fc4da202bcc33995c8b (HEAD -> exp1/features/xy, origin/exp1/features/xy) added function y
+8a7617bcbaaad49db163412a6d7e4bf23c7ec63b added function x
+00ccb217782bd8f08f33f83f2da1c12a5bbaf855 added function b
+41abdf604b7d354d63b80f12ebed67586251f116 added function a
+da6a07ddab846dd038db0ee9972fe22802572884 (main) Initial commit
 </pre>
 </p></details>
 
