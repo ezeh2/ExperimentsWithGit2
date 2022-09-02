@@ -19,9 +19,13 @@ For example merging branches `exp3/line_modifications` and `exp3/line_modificati
 
 ### Testing merge-conflicts without using different branches
 
-There are different modified lines in branch `exp3/conflict_tests`. 
-This allows to test merge conflicts with this:
+There are different modified files in branch `exp3/conflict_tests`. The numbers in the filenames indicate the line wich was modified.
+For example `test_line13.txt` means that this file was copied from `test_base.txt` and line 1 and 3 were modified.
 
+This allows to test merging of the files `text_line1.txt` and `text_line3.txt`:
+
+    # restore
+    cp bck/*.txt .
     git merge-file -L a -L b -L c  text_line1.txt text_base.txt  text_line3.txt
 
 ### Links
