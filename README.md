@@ -15,11 +15,11 @@ For example merging branches `exp3/line_modifications` and `exp3/line_modificati
 * `exp3/line_modifications2`  modifies line 1 and 6
 
    Interesting enough the modified lines 1 and 2 are next to each other and they produce a conflict for no reason.
-   It shdouldn't be like this, but this is a GIT anomaly.
+   It shdouldn't be like this, but this is a GIT anomaly. For more about this see chapter links.
 
 ### Testing merge-conflicts without using different branches
 
-There are different modified lines in branch *exp3/conflict_tests*. 
+There are different modified lines in branch `exp3/conflict_tests`. 
 This allows to test merge conflicts with this:
 
     git merge-file -L a -L b -L c  text_line1.txt text_base.txt  text_line3.txt
