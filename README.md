@@ -9,12 +9,13 @@ For example merging branches `exp3/line_modifications` and `exp3/line_modificati
 
 ### Pairs of branches, which don't produce conflicts:
 * `exp3/line_insertions` and `exp3/line_insertions2`
+* `exp3/line_modifications2` (line 1 and 6 modfied) and `exp3/line_modification3` (line 3 and 4 modified)
 
-### Pairs of branches, which DO produce conflicts:
+### Pairs of branches, which DO produce conflicts, because the have adjacent modified lines:
 * `exp3/line_modifications`   modifies line 2,4 and 5
 * `exp3/line_modifications2`  modifies line 1 and 6
 
-   Interesting enough the modified lines 1 and 2 are next to each other and they produce a conflict for no reason.
+   Since the modified lines 1 and 2 are next to each other and they produce a conflict for no reason.
    It shouldn't be like this, but this is a GIT anomaly. For more about this see chapter **Links** below.
 
 ### Testing merge-conflicts without using different branches
