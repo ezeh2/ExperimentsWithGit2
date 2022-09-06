@@ -15,7 +15,7 @@ For example merging branches `exp3/line_modifications` and `exp3/line_modificati
 * `exp3/line_modifications2`  modifies line 1 and 6
 
    Interesting enough the modified lines 1 and 2 are next to each other and they produce a conflict for no reason.
-   It shdouldn't be like this, but this is a GIT anomaly. For more about this see chapter links.
+   It shouldn't be like this, but this is a GIT anomaly. For more about this see chapter **Links** below.
 
 ### Testing merge-conflicts without using different branches
 
@@ -46,8 +46,7 @@ To reset branch `exp3/line_removals` to its original state do this:
     git checkout exp3/line_removals
     git reset --hard 09b8595
 
-
-
+Here the commit-IDs:
 
     exp3/conflict_tests                1770a0c merge_tests.sh added and several test*.txt files
     exp3/doc                           8409870 add README.md
