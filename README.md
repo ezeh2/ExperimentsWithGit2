@@ -7,11 +7,14 @@ For example merging branches `exp3/line_modifications` and `exp3/line_modificati
     git merge exp3/line_modifications2
 
 
-### Pairs of branches, which don't produce conflicts:
+### Pairs of branches, which don't produce conflicts
 * `exp3/line_insertions` and `exp3/line_insertions2`
 * `exp3/line_modifications2` (line 1 and 6 modfied) and `exp3/line_modification3` (line 3 and 4 modified)
 
-### Pairs of branches, which DO produce conflicts, because the have adjacent modified lines:
+### Pairs of branches, which DO produce conflicts, because inserts and modifications cannot be merge
+* `exp3/line_insertions/2` and `exp3/line_modification/2/3`
+
+### Pairs of branches, which DO produce conflicts, because the have adjacent modified lines
 * `exp3/line_modifications`   modifies line 2,4 and 5
 * `exp3/line_modifications2`  modifies line 1 and 6
 
