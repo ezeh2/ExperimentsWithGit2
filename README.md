@@ -36,6 +36,29 @@ This allows to test merging of the files `text_line1.txt` and `text_line3.txt`:
     cp bck/*.txt .
     git merge-file -L a -L b -L c  text_line1.txt text_base.txt  text_line3.txt
 
+### Configuring graphical merge tool
+If conflicts occur there are markers in test1.txt. These conflicts can be resolved with:
+
+    tkdiff -conflict test1.txt
+
+or use vimdiff as mergetool:<br>
+https://www.rosipov.com/blog/use-vimdiff-as-git-mergetool/<br>
+http://doc.gnu-darwin.org/xxdiff/xxdiff.html
+
+or P4Merge (aka Perforce Helix Merge):<br>
+https://www.slant.co/topics/286/~best-free-3-way-merge-tools-for-windows#4<br>
+https://www.perforce.com/downloads/visual-merge-tool
+
+    git config -l
+    ...
+    merge.tool=p4merge
+    ...
+    
+
+If merge tool is configured it can be invoked like this:
+
+    git mergetool
+
 ### Links
 
 https://stackoverflow.com/questions/29276880/why-does-git-produce-a-merge-conflict-when-lines-next-to-each-other-are-changed
