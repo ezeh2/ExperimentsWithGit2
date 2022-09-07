@@ -11,8 +11,12 @@ For example merging branches `exp3/line_modifications` and `exp3/line_modificati
 * `exp3/line_insertions` and `exp3/line_insertions2`
 * `exp3/line_modifications2` (line 1 and 6 modfied) and `exp3/line_modification3` (line 3 and 4 modified)
 
-### Pairs of branches, which DO produce conflicts, because inserts and modifications cannot be merge
+### Pairs of branches, which DO produce conflicts, because inserts, modifications and removals cannot be merged
 * `exp3/line_insertions/2` and `exp3/line_modification/2/3`
+* `exp3/line_insertions/2` and `exp3/line_removals/2`
+* `exp3/line_modification/2/3`and `exp3/line_removals/2`
+
+* `exp3/line_removals` and `exp3/line_removals2` (conflict produced only by GIT ONLY ?)
 
 ### Pairs of branches, which DO produce conflicts, because the have adjacent modified lines
 * `exp3/line_modifications`   modifies line 2,4 and 5
