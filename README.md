@@ -49,6 +49,12 @@ or P4Merge (aka Perforce Helix Merge):<br>
 https://www.slant.co/topics/286/~best-free-3-way-merge-tools-for-windows#4<br>
 https://www.perforce.com/downloads/visual-merge-tool
 
+To configure graphical merge tool:
+
+    git mergetool --tool-help
+
+To see which merge-tool is configured:
+
     git config -l
     ...
     merge.tool=p4merge
